@@ -32,8 +32,7 @@ This is the connection diagram of the system:
 
 Para poder crear este nuevo metodo de firmar offline y mandar las trasacciones por LoRaWAN necesitabamos una wallet que fuera compatible con este nuevo sistema, asi que se creamos nuestra propia wallet Heliport como aplicacion nativa de Android.
 
-<img src="https://i.ibb.co/zNdnKh6/vlcsnap-2023-01-22-16h32m42s372.png" width="32%"> <img src="https://i.ibb.co/YkRRSn1/vlcsnap-2023-01-22-16h32m51s030.png" width="32%"> <img src="https://i.ibb.co/2kyHgfM/vlcsnap-2023-01-22-16h33m02s621.png
-" width="32%">
+<img src="https://i.ibb.co/zNdnKh6/vlcsnap-2023-01-22-16h32m42s372.png" width="32%"> <img src="https://i.ibb.co/YkRRSn1/vlcsnap-2023-01-22-16h32m51s030.png" width="32%"> <img src="https://i.ibb.co/2kyHgfM/vlcsnap-2023-01-22-16h33m02s621.png" width="32%">
 
 Esta wallet funciona totalmente en mainnet y tiene todas las funciones de una wallet tradicional para recibir, gestionar y mandar assets.
 
