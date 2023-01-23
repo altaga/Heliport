@@ -90,6 +90,13 @@ La red de helium se encarga de todo el manejo de devices, manejo de datos e inte
 
 # AWS IoT:
 
+Una vez llegada la informacion a AWS IoT podemos hacer uso de ella de forma correcta, en este caso para hacer peticiones a la RPC ocupabamos activar cada vez que llegara un dato de uno de los devices una lambda (funcion serverless) la cual segun el tipo de dato que llegara, mandar la trasaccion a la blockchain o mandar un dato mediante downlink al device.
+
+<img src="https://i.ibb.co/KXnscQZ/image.png">
+
+Para mandar los datos a una lambda es necesario crear una rule, esta rule asi como se muestra aqui abajo manda todos los mensajes recibidos del topic /helium/devices a la lambda. Sin embargo es posible realizar un preprocesamiento de los mismos en el SQL statement.
+
+<img src="https://i.ibb.co/cQDz6BZ/image.png">
 
 
 # AWS Lambda:
