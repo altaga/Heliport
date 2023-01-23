@@ -98,14 +98,43 @@ Para mandar los datos a una lambda es necesario crear una rule, esta rule asi co
 
 <img src="https://i.ibb.co/cQDz6BZ/image.png">
 
-
 # AWS Lambda:
 
+Ya una vez llegan los datos a la lambda estos son procesados por comandos o transacciones.
 
+- Comandos: aunque podemos realizar cualquier comando que se pueda mandar a un Solana RPC Mainnet, solo tenemos configurado el getRecentBlockhash con el fin de mandarlo por Downlink al device y este lo envie al telefono.
 
-# Solana RPC:
+        if (event.payload === "Z2V0QmxvY2s=") { // Get Recent Blockhash Base64 Command
+            let recentBlockhash = await connection.getRecentBlockhash();
+            recentBlockhash = Buffer.from(recentBlockhash.blockhash,'utf8');
+            var raw = JSON.stringify({
+                "payload_raw": recentBlockhash.toString('base64'),
+                "port": 2,
+                "confirmed": false
+            });
+            var requestOptions = {
+                method: 'POST',
+                headers: myHeaders,
+                body: raw,
+                redirect: 'follow'
+            };
+            return new Promise((resolve, reject) => {
+            fetch("https://console.helium.com/api/v1/down/XXXXX/XXXXX", requestOptions)
+                .then(response => response.text())
+                .then(result => resolve(result))
+                .catch(error => reject(error));
+            })
+        }
 
+- Transacciones: Estas pasan directamente como RawTransactions a nuestro RPC y nos permite ejecutar la instruccion directamente en solana mainnet como se muestra en el demo final.
 
+        let transaction = base64ToArrayBuffer(event.payload)
+        let res = await sendAndConfirmRawTransaction(connection, transaction);
+        const response = {
+            statusCode: 200,
+            body: res,
+        };
+        return response;
 
 # Prototype:
 
@@ -134,7 +163,6 @@ Para mandar los datos a una lambda es necesario crear una rule, esta rule asi co
 - [Helium Console:](#helium-console)
 - [AWS IoT:](#aws-iot)
 - [AWS Lambda:](#aws-lambda)
-- [Solana RPC:](#solana-rpc)
 - [Prototype:](#prototype)
 - [Our DEMO:](#our-demo)
 - [Business Opportunity:](#business-opportunity)
