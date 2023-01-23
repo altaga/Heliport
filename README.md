@@ -138,7 +138,11 @@ Ya una vez llegan los datos a la lambda estos son procesados por comandos o tran
 
 # Prototype:
 
+Device:
+<img src="https://i.ibb.co/rG114sT/20230121-163920.jpg">
 
+Phone:
+<img src="https://i.ibb.co/M9qndJY/vlcsnap-2023-01-22-19h14m37s335.png">
 
 # Our DEMO:
 
