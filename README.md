@@ -32,22 +32,16 @@ This is the connection diagram of the system:
 
 Para poder crear este nuevo metodo de firmar offline y mandar las trasacciones por LoRaWAN necesitabamos una wallet que fuera compatible con este nuevo sistema, asi que se creamos nuestra propia wallet Heliport como aplicacion nativa de Android.
 
-<img src="https://i.ibb.co/zNdnKh6/vlcsnap-2023-01-22-16h32m42s372.png" width="32%">
-<img src="https://i.ibb.co/YkRRSn1/vlcsnap-2023-01-22-16h32m51s030.png" width="32%">
-<img src="https://i.ibb.co/2kyHgfM/vlcsnap-2023-01-22-16h33m02s621.png
+<img src="https://i.ibb.co/zNdnKh6/vlcsnap-2023-01-22-16h32m42s372.png" width="32%"> <img src="https://i.ibb.co/YkRRSn1/vlcsnap-2023-01-22-16h32m51s030.png" width="32%"> <img src="https://i.ibb.co/2kyHgfM/vlcsnap-2023-01-22-16h33m02s621.png
 " width="32%">
 
 Esta wallet funciona totalmente en mainnet y tiene todas las funciones de una wallet tradicional para recibir, gestionar y mandar assets.
 
-<img src="https://i.ibb.co/Mf0NGFN/vlcsnap-2023-01-22-16h33m10s738.png" width="32%">
-<img src="https://i.ibb.co/nmM20m2/vlcsnap-2023-01-22-16h33m21s583.png" width="32%">
-<img src="https://i.ibb.co/mCNDYvN/vlcsnap-2023-01-22-16h33m33s966.png" width="32%">
+<img src="https://i.ibb.co/Mf0NGFN/vlcsnap-2023-01-22-16h33m10s738.png" width="32%"> <img src="https://i.ibb.co/nmM20m2/vlcsnap-2023-01-22-16h33m21s583.png" width="32%"> <img src="https://i.ibb.co/mCNDYvN/vlcsnap-2023-01-22-16h33m33s966.png" width="32%">
 
 Sin embargo esta wallet tiene la capacidad de mandar las trasacciones mediante Bluetooth a nuestro device con LoRaWAN, siempre y cuando este el device cerca del celular, por ejemplo cuando estamos en modo avion y con el bluetooth encendido solo aparecera disponible la transaccion por LoRaWAN.
 
-<img src="https://i.ibb.co/yYsGQq6/vlcsnap-2023-01-22-17h45m01s784.png" width="32%">
-<img src="https://i.ibb.co/fqXG5tS/vlcsnap-2023-01-22-17h43m33s976.png" width="32%">
-<img src="https://i.ibb.co/HN1MngP/vlcsnap-2023-01-22-17h45m28s235.png" width="32%">
+<img src="https://i.ibb.co/yYsGQq6/vlcsnap-2023-01-22-17h45m01s784.png" width="32%"> <img src="https://i.ibb.co/fqXG5tS/vlcsnap-2023-01-22-17h43m33s976.png" width="32%"> <img src="https://i.ibb.co/HN1MngP/vlcsnap-2023-01-22-17h45m28s235.png" width="32%">
 
 NOTA: Para lograr firmar una trasaccion y esta sea valida para la blockchan, siempre necesitamos el last solana blockhash el cual le pediremos al device cada vez que mandemos la trasaccion.
 
@@ -142,7 +136,7 @@ Device:
 <img src="https://i.ibb.co/rG114sT/20230121-163920.jpg">
 
 Phone:
-<img src="https://i.ibb.co/M9qndJY/vlcsnap-2023-01-22-19h14m37s335.png">
+<img src="https://i.ibb.co/pvXwdww/Vlcsnap-2023-01-22-19h14m37s335.png">
 
 # Our DEMO:
 
