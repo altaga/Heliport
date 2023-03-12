@@ -129,7 +129,7 @@ class WithdrawCrypto extends Component {
     componentDidMount() {
         NetInfo.fetch().then((state) => {
             if (state.isConnected) {
-                this.connector = new Connection("https://attentive-lingering-putty.solana-mainnet.discover.quiknode.pro/b1d2663c7bd9a4e5de5ce2deae05003d08cce50f/")
+                this.connector = new Connection("https://attentive-lingering-putty.solana-mainnet.discover.quiknode.pro/XXXXXXXXXXXXXXXXXX/")
                 this.setState({
                     network: true
                 })
