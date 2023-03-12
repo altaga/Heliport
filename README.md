@@ -65,7 +65,7 @@ Gracias a esto podemos realizar un sistema de pagos 100% offline, solo con la in
 
 # LoRaWAN Device:
 
-The purpose of the LoRaWAN device is to receive RPC method responses and send RPC calls via BLE from any Heliport Dapp and communicate to the Helium LoRaWAN network.
+The purpose of the LoRaWAN device is to receive RPC method responses and send RPC calls via BLE from any Heliport Dapp and broadcast to the Helium LoRaWAN network.
 
 <img src="https://i.ibb.co/sbG77Pw/scheme2-drawio.png">
 
