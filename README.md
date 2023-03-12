@@ -51,7 +51,9 @@ El proceso de firma de la transaccion se hace atravez del Mobile Wallet Adapter 
 
 <img src="https://i.ibb.co/7vbkn3Y/vlcsnap-2023-03-12-14h18m49s716.png" width="32%"> <img src="https://i.ibb.co/R6ckN9B/vlcsnap-2023-03-12-14h19m49s531.png" width="32%"> <img src="https://i.ibb.co/NS59CSp/seeed.png" width="32%"> 
 
-NOTE: In order to sign a transaction and it is valid for the blockchan, we always need the last Solana blockhash which we will ask the device for each time we send the transaction.
+NOTE: In order to sign a transaction and it is valid for the blockchan, we always need the last Solana blockhash which we will ask the device for each time we send the transaction. Sin embargo a futuro podriamos implementar una Durable Nonce Transaction, con el fin de que la cuenta no requiera el last blockhash y la transaccion sea aun mas agil al no hacer la peticion al Nodo del recentBlockhash. O incluso pudiera guardarse la transaccion si la blockchain estuviera en un downtime y mandarla una vez recuperara el estatus online.
+
+https://solanacookbook.com/references/offline-transactions.html#durable-nonce
 
 # React Native POS Dapp:
 
