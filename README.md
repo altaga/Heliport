@@ -1,5 +1,5 @@
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) [<img src="https://img.shields.io/badge/View-Video-red">](https://youtu.be/GNk0lvfcLr4)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) [<img src="https://img.shields.io/badge/View-Video-red">](PENDING)
 
 # Heliport
 
@@ -7,14 +7,16 @@
 
 ## Here is our main demo video: 
 
-[![Demo](https://i.ibb.co/g4W3ypx/image.png)](https://youtu.be/GNk0lvfcLr4)
+[![Demo](https://i.ibb.co/g4W3ypx/image.png)](PENDING...)
 
 
 # Materials:
 
 Hardware:
-- [WiFi LoRa 32 V2](https://heltec.org/project/wifi-lora-32/)
-- [Android Phone](https://www.android.com/phones/)
+- [XIAO Board](https://www.seeedstudio.com/Seeed-XIAO-BLE-nRF52840-p-5201.html)
+- [Expansion Base for XIAO](https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html)
+- [Grove Wio-E5](https://www.seeedstudio.com/Grove-LoRa-E5-STM32WLE5JC-p-4867.html)
+- [SAGA Phone](https://solanamobile.com/es/hardware)
 
 Software:
 - [Arduino IDE](https://www.arduino.cc/en/software)
@@ -30,7 +32,7 @@ Cloud and Web Services:
 
 This is the connection diagram of the system:
 
-<img src="https://i.ibb.co/Sv89yYc/sheme-drawio.png">
+<img src="https://i.ibb.co/BGJMRRf/scheme-drawio.png">
 
 # React Native Wallet:
 
@@ -154,7 +156,7 @@ https://youtu.be/GNk0lvfcLr4
 # Table of contents
 
 - [Heliport](#heliport)
-- [Introduction:](#introduction)
+  - [Here is our main demo video:](#here-is-our-main-demo-video)
 - [Materials:](#materials)
 - [Connection Diagram:](#connection-diagram)
 - [React Native Wallet:](#react-native-wallet)
@@ -164,6 +166,5 @@ https://youtu.be/GNk0lvfcLr4
 - [AWS Lambda:](#aws-lambda)
 - [Prototype:](#prototype)
 - [Our DEMO:](#our-demo)
-- [Business Opportunity:](#business-opportunity)
 - [References:](#references)
 - [Table of contents](#table-of-contents)
