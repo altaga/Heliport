@@ -145,13 +145,16 @@ Once the data reaches the lambda, it is processed by methods or transactions.
 # Prototype:
 
 Device:
-<img src="https://i.ibb.co/rG114sT/20230121-163920.jpg">
+
+<img src="https://i.ibb.co/nPVk8ym/image.png" height="300px">
 
 SAGA Phone:
-<img src="https://i.ibb.co/pvXwdww/Vlcsnap-2023-01-22-19h14m37s335.png">
+
+<img src="https://i.ibb.co/HFDdzRT/image.png" height="300px">
 
 POS system:
-<img src="https://i.ibb.co/pvXwdww/Vlcsnap-2023-01-22-19h14m37s335.png">
+
+<img src="https://i.ibb.co/zRz2xYM/image.png" height="300px">
 
 # Our DEMO:
 
