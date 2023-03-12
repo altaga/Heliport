@@ -32,23 +32,37 @@ Cloud and Web Services:
 
 This is the connection diagram of the system:
 
-<img src="https://i.ibb.co/BGJMRRf/scheme-drawio.png">
+<img src="https://i.ibb.co/LpNJVMS/scheme-drawio.png">
 
-# React Native Wallet:
+# React Native SAGA Dapp:
 
-In order to create this new method of signing offline and sending transactions via LoRaWAN, we needed a wallet that is compatible with this new system, so we created our own Heliport wallet as a native Android application.
+In order to create this new method of signing offline and sending transactions via LoRaWAN, we needed a Dapp that is compatible with this new system, so we created our own Heliport Dapp as a native Android application for SAGA phone.
 
-<img src="https://i.ibb.co/zNdnKh6/vlcsnap-2023-01-22-16h32m42s372.png" width="32%"> <img src="https://i.ibb.co/YkRRSn1/vlcsnap-2023-01-22-16h32m51s030.png" width="32%"> <img src="https://i.ibb.co/2kyHgfM/vlcsnap-2023-01-22-16h33m02s621.png" width="32%">
+<img src="https://i.ibb.co/xDVfx7n/vlcsnap-2023-03-12-14h05m17s357.png" width="32%"> <img src="https://i.ibb.co/t3S9Wnt/vlcsnap-2023-03-12-14h05m28s504.png" width="32%"> <img src="https://i.ibb.co/sg0Q5nw/vlcsnap-2023-03-12-14h10m38s662.png" width="32%">
 
-This wallet works entirely on mainnet and has all the functions of a traditional wallet to receive, manage and send assets.
+This Dapp works entirely on mainnet and has all the functions of a traditional wallet, get balances, get current SOL price, receive, manage and send assets via solana mainnet, with integrated SeedVault, fully offline (via LoRaWAN network).
 
-<img src="https://i.ibb.co/Mf0NGFN/vlcsnap-2023-01-22-16h33m10s738.png" width="32%"> <img src="https://i.ibb.co/nmM20m2/vlcsnap-2023-01-22-16h33m21s583.png" width="32%"> <img src="https://i.ibb.co/mCNDYvN/vlcsnap-2023-01-22-16h33m33s966.png" width="32%">
+<img src="https://i.ibb.co/mTxHHrM/vlcsnap-2023-03-12-15h18m44s598.png" width="32%"> <img src="https://i.ibb.co/Hx0SX5Q/vlcsnap-2023-03-12-14h10m44s614.png" width="32%">  <img src="https://i.ibb.co/NLK27dc/vlcsnap-2023-03-12-15h21m30s558.png" width="32%">
 
-However, this wallet has the ability to send transactions via Bluetooth to our device with LoRaWAN, as long as the device is close to the cell phone, for example when we are in airplane mode and with Bluetooth turned on, only the LoRaWAN transaction will appear available.
+However, this Dapp has the ability to send transactions via Bluetooth Low Energy (BLE) to our device with LoRaWAN, as long as the device is close to the cell phone, for example when we are in airplane mode and with Bluetooth turned on, only the LoRaWAN transaction will appear available.
 
-<img src="https://i.ibb.co/yYsGQq6/vlcsnap-2023-01-22-17h45m01s784.png" width="32%"> <img src="https://i.ibb.co/fqXG5tS/vlcsnap-2023-01-22-17h43m33s976.png" width="32%"> <img src="https://i.ibb.co/HN1MngP/vlcsnap-2023-01-22-17h45m28s235.png" width="32%">
+<img src="https://i.ibb.co/k2RpSf6/vlcsnap-2023-03-12-14h13m24s859.png" width="32%"> <img src="https://i.ibb.co/K93x7Np/vlcsnap-2023-03-12-15h24m25s483.png" width="32%"> <img src="https://i.ibb.co/mh6PDQz/vlcsnap-2023-03-12-15h26m02s852.png" width="32%">
+
+El proceso de firma de la transaccion se hace atravez del Mobile Wallet Adapter con Solflare, en el futuro buscamos darle soporte directo al SeedVault en React Native.
+
+<img src="https://i.ibb.co/7vbkn3Y/vlcsnap-2023-03-12-14h18m49s716.png" width="32%"> <img src="https://i.ibb.co/R6ckN9B/vlcsnap-2023-03-12-14h19m49s531.png" width="32%"> <img src="https://i.ibb.co/NS59CSp/seeed.png" width="32%"> 
 
 NOTE: In order to sign a transaction and it is valid for the blockchan, we always need the last Solana blockhash which we will ask the device for each time we send the transaction.
+
+# React Native POS Dapp:
+
+Esta Dapp sirve como interfaz para devices POS, impresion de recibos, revisar el balance y revision de que la transaccion haya sido ejecutada correctamente en la blockchain atravez de nuestro Device de LoRaWAN.
+
+<img src="https://i.ibb.co/ZzLycMr/vlcsnap-2023-03-12-15h41m11s156.png" width="32%"> <img src="https://i.ibb.co/wyDmch9/vlcsnap-2023-03-12-15h42m38s967.png" width="32%"> <img src="https://i.ibb.co/7XcG9B4/vlcsnap-2023-03-12-15h58m01s671.png" width="32%"> 
+
+Gracias a esto podemos realizar un sistema de pagos 100% offline, solo con la infraestructura de la red de Helium.
+
+<img src="./Images/printing.gif"> 
 
 # LoRaWAN Device:
 
@@ -159,7 +173,8 @@ https://youtu.be/GNk0lvfcLr4
   - [Here is our main demo video:](#here-is-our-main-demo-video)
 - [Materials:](#materials)
 - [Connection Diagram:](#connection-diagram)
-- [React Native Wallet:](#react-native-wallet)
+- [React Native SAGA Dapp:](#react-native-saga-dapp)
+- [React Native POS Dapp:](#react-native-pos-dapp)
 - [LoRaWAN Device:](#lorawan-device)
 - [Helium Console:](#helium-console)
 - [AWS IoT:](#aws-iot)
