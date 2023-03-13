@@ -5,7 +5,13 @@
 
 <img src="https://i.ibb.co/G2FvkzC/New-Project.png" width="400">
 
-## Here is our main demo video: 
+# APKs:
+
+SAGA APK: [LINK](./React%20Native%20Project%20SAGA%20APK/app-release.apk)
+
+POS APK: [LINK](./React%20Native%20Project%20POS%20APK/app-release.apk)
+
+# Here is our main demo video: 
 
 [![Demo](https://i.ibb.co/g4W3ypx/image.png)](PENDING...)
 
@@ -32,6 +38,46 @@ Cloud and Web Services:
 This is the connection diagram of the system:
 
 <img src="https://i.ibb.co/LpNJVMS/scheme-drawio.png">
+
+# SolanaFM:
+
+Como parte de nuestro proyecto se decidio utilizar las APIs de Solana FM para obtener lo balances en tiempo real de todas las wallets desde el celular cuando hay una red celular disponible. O directamente desde la lambda, cuando tenemos la red LoRaWAN disponible.
+
+    async getBalance(address) {
+        return new Promise((resolve) => {
+            var myHeaders = new Headers();
+            myHeaders.append("Content-Type", "application/json");
+            var raw = JSON.stringify({
+                "accountHashes": [
+                    address.toBase58()
+                ],
+                "fields": [
+                    "data",
+                    "onchain"
+                ]
+            });
+            var requestOptions = {
+                method: 'POST',
+                headers: myHeaders,
+                body: raw,
+                redirect: 'follow'
+            };
+            fetch("https://api.solana.fm/v0/accounts", requestOptions)
+                .then(response => response.text())
+                .then(result => {
+                    resolve(JSON.parse(result).result[0].onchain.lamports)
+                })
+                .catch(error => console.log('error', error));
+        })
+    }
+
+Estos codigos estan implementados en los siguientes archivos del codigo.
+
+[Saga React Native App](./React%20Native%20Project%20SAGA/src/screens/main.js)
+
+[POS React Native App](./React%20Native%20Project%20POS/src/screens/main.js)
+
+[Lambda](./AWS%20Lambda/index.js)
 
 # React Native SAGA Dapp:
 
@@ -169,9 +215,11 @@ POS system:
 # Table of contents
 
 - [Heliport](#heliport)
-  - [Here is our main demo video:](#here-is-our-main-demo-video)
+- [APKs:](#apks)
+- [Here is our main demo video:](#here-is-our-main-demo-video)
 - [Materials:](#materials)
 - [Connection Diagram:](#connection-diagram)
+- [SolanaFM:](#solanafm)
 - [React Native SAGA Dapp:](#react-native-saga-dapp)
 - [React Native POS Dapp:](#react-native-pos-dapp)
 - [LoRaWAN Device:](#lorawan-device)
