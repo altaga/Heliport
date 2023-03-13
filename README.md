@@ -32,12 +32,13 @@ Cloud and Web Services:
 - [Helium Console](https://console.helium.com/)
 - [AWS IoT](https://aws.amazon.com/iot/)
 - [AWS Lambda](https://aws.amazon.com/lambda/)
+- [SolanaFM API](https://docs.solana.fm/)
 
 # Connection Diagram:
 
 This is the connection diagram of the system:
 
-<img src="https://i.ibb.co/LpNJVMS/scheme-drawio.png">
+<img src="https://i.ibb.co/Tr8tG06/scheme-drawio-1.png">
 
 # SolanaFM:
 
