@@ -73,11 +73,15 @@ Como parte de nuestro proyecto se decidio utilizar las APIs de Solana FM para ob
 
 Estos codigos estan implementados en los siguientes archivos del codigo.
 
-[Saga React Native App](./React%20Native%20Project%20SAGA/src/screens/main.js)
+- [Saga React Native App](./React%20Native%20Project%20SAGA/src/screens/main.js)
 
-[POS React Native App](./React%20Native%20Project%20POS/src/screens/main.js)
+- [POS React Native App](./React%20Native%20Project%20POS/src/screens/main.js)
 
-[Lambda](./AWS%20Lambda/index.js)
+- [Lambda](./AWS%20Lambda/index.js)
+
+Mas detalles sobre la API de SolanaFM
+
+- https://docs.solana.fm/
 
 # React Native SAGA Dapp:
 
