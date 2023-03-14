@@ -42,7 +42,7 @@ This is the connection diagram of the system:
 
 # SolanaFM:
 
-Como parte de nuestro proyecto se decidio utilizar las APIs de Solana FM para obtener lo balances en tiempo real de todas las wallets desde el celular cuando hay una red celular disponible. O directamente desde la lambda, cuando tenemos la red LoRaWAN disponible.
+As part of our project, we decided to use the SolanaFM APIs to obtain balances in real time of all the wallets from the cell phone when there is a cellular network available. Or directly from the lambda, when we have the LoRaWAN network available.
 
     async getBalance(address) {
         return new Promise((resolve) => {
@@ -72,7 +72,7 @@ Como parte de nuestro proyecto se decidio utilizar las APIs de Solana FM para ob
         })
     }
 
-Estos codigos estan implementados en los siguientes archivos del codigo.
+These codes are implemented in the following code files.
 
 - [Saga React Native App](./React%20Native%20Project%20SAGA/src/screens/main.js)
 
@@ -80,7 +80,7 @@ Estos codigos estan implementados en los siguientes archivos del codigo.
 
 - [Lambda](./AWS%20Lambda/index.js)
 
-Mas detalles sobre la API de SolanaFM
+More details about the SolanaFM API
 
 - https://docs.solana.fm/
 
@@ -94,25 +94,25 @@ This Dapp works entirely on mainnet and has all the functions of a traditional w
 
 <img src="https://i.ibb.co/mTxHHrM/vlcsnap-2023-03-12-15h18m44s598.png" width="32%"> <img src="https://i.ibb.co/Hx0SX5Q/vlcsnap-2023-03-12-14h10m44s614.png" width="32%">  <img src="https://i.ibb.co/NLK27dc/vlcsnap-2023-03-12-15h21m30s558.png" width="32%">
 
-However, this Dapp has the ability to send transactions via Bluetooth Low Energy (BLE) to our device with LoRaWAN, as long as the device is close to the cell phone, for example when we are in airplane mode and with Bluetooth turned on, only the LoRaWAN transaction will appear available.
+Also, this Dapp has the ability to send transactions via Bluetooth Low Energy (BLE) to our device with LoRaWAN, as long as the device is close to the cell phone, for example when we are in airplane mode and with Bluetooth turned on, only the LoRaWAN transaction will appear available.
 
 <img src="https://i.ibb.co/k2RpSf6/vlcsnap-2023-03-12-14h13m24s859.png" width="32%"> <img src="https://i.ibb.co/K93x7Np/vlcsnap-2023-03-12-15h24m25s483.png" width="32%"> <img src="https://i.ibb.co/mh6PDQz/vlcsnap-2023-03-12-15h26m02s852.png" width="32%">
 
-El proceso de firma de la transaccion se hace atravez del Mobile Wallet Adapter con Solflare, en el futuro buscamos darle soporte directo al SeedVault en React Native.
+The transaction signing process is done through the Mobile Wallet Adapter with Solflare, in the future we seek to give direct support to SeedVault in React Native.
 
 <img src="https://i.ibb.co/7vbkn3Y/vlcsnap-2023-03-12-14h18m49s716.png" width="32%"> <img src="https://i.ibb.co/R6ckN9B/vlcsnap-2023-03-12-14h19m49s531.png" width="32%"> <img src="https://i.ibb.co/NS59CSp/seeed.png" width="32%"> 
 
-NOTE: In order to sign a transaction and it is valid for the blockchan, we always need the last Solana blockhash which we will ask the device for each time we send the transaction. Sin embargo a futuro podriamos implementar una Durable Nonce Transaction, con el fin de que la cuenta no requiera el last blockhash y la transaccion sea aun mas agil al no hacer la peticion al Nodo del recentBlockhash. O incluso pudiera guardarse la transaccion si la blockchain estuviera en un downtime y mandarla una vez recuperara el estatus online.
+NOTE: In order to sign a transaction and it is valid for the blockchan, we always need the last Solana blockhash which we will ask the device for each time we send the transaction. Nevertheless, in the future we could implement a Durable Nonce Transaction, so that the account does not require the last blockhash and the transaction is even more agile by not making the request to the Node for the recentBlockhash. Or the transaction could even be saved if the blockchain was in a downtime and sent once the online status was recovered.
 
 https://solanacookbook.com/references/offline-transactions.html#durable-nonce
 
 # React Native POS Dapp:
 
-Esta Dapp sirve como interfaz para devices POS, impresion de recibos, revisar el balance y revision de que la transaccion haya sido ejecutada correctamente en la blockchain atravez de nuestro Device de LoRaWAN.
+This Dapp serves as an interface for POS devices, printing receipts, checking the balance and checking that the transaction has been executed correctly in the blockchain through our LoRaWAN Device.
 
 <img src="https://i.ibb.co/ZzLycMr/vlcsnap-2023-03-12-15h41m11s156.png" width="32%"> <img src="https://i.ibb.co/wyDmch9/vlcsnap-2023-03-12-15h42m38s967.png" width="32%"> <img src="https://i.ibb.co/7XcG9B4/vlcsnap-2023-03-12-15h58m01s671.png" width="32%"> 
 
-Gracias a esto podemos realizar un sistema de pagos 100% offline, solo con la infraestructura de la red de Helium.
+Thanks to this we can carry out a 100% offline payment system, only with the infrastructure of the Helium network.
 
 <img src="./Images/printing.gif"> 
 
@@ -173,7 +173,7 @@ To send the data to a lambda it is necessary to create a rule, this rule, as sho
 
 Once the data reaches the lambda, it is processed by methods or transactions.
 
-- Methods: cada uno de los metodos que querramos implementar en el sistema, debemos hacerlo manualmente ya que estos pueden llegar a tener responses muy largos que no nos es posible mandar completos sobre LoRaWAN, asi que debemos solo filtrar los datos indispensables para el cliente, todos los methods se mandan atravez del puerto 1 de Helium.
+- Methods: Each of the methods that we want to implement in the system, we must do it manually since these can have very long responses that it is not possible for us to send complete over LoRaWAN, so we must only filter the essential data for the client, all the methods are sent through port 1 of Helium.
 
       if (event.port === 1) // Methods Port
       { 
@@ -214,6 +214,11 @@ POS system:
 [![Demo](https://i.ibb.co/g4W3ypx/image.png)](PENDING...)
 
 # References:
+
+https://solana.com/
+https://docs.solana.com/
+https://www.helium.foundation/
+https://explorer.helium.com/
 
 
 
