@@ -1,5 +1,5 @@
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) [<img src="https://img.shields.io/badge/View-Video-red">](PENDING)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) [<img src="https://img.shields.io/badge/View-Video-red">](https://youtu.be/33bW-RTs9Do)
 
 # Heliport
 
@@ -13,7 +13,7 @@ POS APK: [LINK](./React%20Native%20Project%20POS%20APK/app-release.apk)
 
 # Here is our main demo video: 
 
-[![Demo](https://i.ibb.co/g4W3ypx/image.png)](PENDING...)
+[![Demo](https://i.ibb.co/g4W3ypx/image.png)](https://youtu.be/33bW-RTs9Do)
 
 # Materials:
 
@@ -211,7 +211,7 @@ POS system:
 
 # Our DEMO:
 
-[![Demo](https://i.ibb.co/g4W3ypx/image.png)](PENDING...)
+[![Demo](https://i.ibb.co/g4W3ypx/image.png)](https://youtu.be/33bW-RTs9Do)
 
 # References:
 
