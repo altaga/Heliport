@@ -215,12 +215,10 @@ POS system:
 
 # References:
 
-https://solana.com/
-https://docs.solana.com/
-https://www.helium.foundation/
-https://explorer.helium.com/
-
-
+- https://solana.com/
+- https://docs.solana.com/
+- https://www.helium.foundation/
+- https://explorer.helium.com/
 
 # Table of contents
 
