@@ -197,6 +197,11 @@ Once the data reaches the lambda, it is processed by methods or transactions.
 
 # Prototypes:
 
+LoraWAN Node:
+
+<img src="https://i.ibb.co/BgdnPw8/20230825-142538.jpg" height="300px">
+
+All Devices together:
 <img src="https://i.ibb.co/QM55fBb/vlcsnap-2023-09-23-22h01m24s745.png" height="300px">
 
 # Our DEMO:
