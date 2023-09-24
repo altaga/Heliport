@@ -1,0 +1,247 @@
+import { Dimensions, StatusBar, StyleSheet } from "react-native";
+
+const header = 70;
+const footer = 60;
+export const main = Dimensions.get("window").height - (header + footer);
+
+const screenHeight = Dimensions.get("screen").height;
+const windowHeight = Dimensions.get("window").height;
+
+export const StatusBarHeight = StatusBar.currentHeight;
+export const NavigatorBarHeight =
+  screenHeight - windowHeight ;
+
+const GlobalStyles = StyleSheet.create({
+  container: {
+    width: Dimensions.get("window").width,
+    height: Dimensions.get("window").height,
+    display: "flex",
+    justifyContent: "space-around",
+    alignItems: "center",
+    backgroundColor: "#222222",
+  },
+  containerKeyboard: {
+    width: Dimensions.get("window").width,
+    height: Dimensions.get("window").height,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#222222",
+  },
+  containerImage: {
+    width: Dimensions.get("window").width,
+    height: Dimensions.get("window").height,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  selector: {
+    borderColor: "#00e599",
+    backgroundColor: `#00e599`,
+    borderTopWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    width: Dimensions.get("window").width * 0.3333,
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  selectorSelected: {
+    borderColor: "#00e599",
+    backgroundColor: "white",
+    borderWidth: 1,
+    width: Dimensions.get("window").width * 0.3333,
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  selectorText: {
+    fontSize: 18,
+    color: "white",
+    textAlign: "center",
+  },
+  selectorSelectedText: {
+    fontSize: 18,
+    color: "black",
+    textAlign: "center",
+  },
+  title: {
+    fontWeight: "bold",
+    fontSize: 32,
+    color: "#fff",
+    textAlign: "center",
+  },
+  description: {
+    fontWeight: "bold",
+    fontSize: 18,
+    textAlign: "center",
+    color: "#555"
+  },
+  inputSelector: {
+    borderRadius: 5,
+    borderColor: "#00e599",
+    borderWidth: 2,
+    color: "black",
+    alignSelf: "center",
+    marginBottom: 20,
+    marginTop: 20,
+    height: 50,
+  },
+  inputSelectorLabel: {
+    color: "white",
+    fontSize: 24,
+    alignSelf: "center",
+  },
+  inputSelectorText: {
+    fontSize: 24,
+    color: "black",
+    textAlign: "center",
+    width: "100%",
+    paddingLeft: "10%",
+  },
+  input: {
+    borderRadius: 5,
+    width: "90%",
+    borderColor: "#00e599",
+    borderWidth: 2,
+    color: "black",
+    backgroundColor: "white",
+    justifyContent: "center",
+    alignContent: "center",
+    alignSelf: "center",
+    textAlign: "center",
+    fontSize: 24,
+    height: 50,
+    marginBottom: 20,
+    marginTop: 20,
+  },
+  singleButton: {
+    backgroundColor: "#00e599",
+    borderRadius: 50,
+    width: 60,
+    height: 60,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  singleButtonText: {
+    fontSize: 14,
+    color: "white",
+  },
+  singleModalButton: {
+    backgroundColor: "#00e599",
+    borderRadius: 50,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  singleModalButtonText: {
+    fontSize: 24,
+    color: "white",
+    marginVertical: 10,
+  },
+  buttonLogoStyle: {
+    backgroundColor: "#00e599",
+    borderRadius: 50,
+    padding: 10,
+    width: Dimensions.get("window").width * 0.8,
+    height: Dimensions.get("window").height * 0.15,
+    alignItems: "center",
+    borderColor: "black",
+    borderWidth: 2,
+  },
+  buttonStyle: {
+    backgroundColor: "#00e599",
+    borderRadius: 50,
+    padding: 10,
+    width: Dimensions.get("window").width * 0.9,
+    alignItems: "center",
+    borderColor: "black",
+    borderWidth: 2,
+    marginBottom: 20,
+  },
+  buttonStyleDisabled: {
+    backgroundColor: "#00e59977",
+    borderRadius: 50,
+    padding: 10,
+    width: Dimensions.get("window").width * 0.9,
+    alignItems: "center",
+    borderColor: "black",
+    borderWidth: 2,
+    marginBottom: 20,
+  },
+  buttonStyleLogin: {
+    backgroundColor: "#00e599",
+    borderRadius: 50,
+    padding: 10,
+    width: Dimensions.get("window").width * 0.9,
+    alignItems: "center",
+    borderColor: "black",
+    borderWidth: 2,
+  },
+  buttonStyleLoginDisabel: {
+    backgroundColor: "#5c8074",
+    borderRadius: 50,
+    padding: 10,
+    width: Dimensions.get("window").width * 0.9,
+    alignItems: "center",
+    borderColor: "black",
+    borderWidth: 2,
+  },
+  buttonLogoutStyle: {
+    backgroundColor: `#00e599`,
+    borderRadius: 50,
+    padding: 10,
+    width: Dimensions.get("window").width * 0.3,
+    alignItems: "center",
+    borderColor: "black",
+    borderWidth: 2,
+  },
+  network: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    width: "90%",
+    height: 60,
+    backgroundColor: "#555555",
+    borderRadius: 10,
+    marginVertical: 10,
+  },
+  solanaPayRec: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    width: "90%",
+    height: 50,
+    backgroundColor: "#555555",
+    borderRadius: 10,
+  },
+  header: {
+    height: header,
+    width: Dimensions.get("window").width,
+    backgroundColor: "#161B19",
+    borderBottomWidth: 1,
+    borderBottomColor: `#00e599`,
+    backgroundColor: "#1E2423",
+  },
+  headerItem: {
+    width: Dimensions.get("window").width / 3,
+    height: "100%",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  main: {
+    height: main,
+  },
+  mainComplete: {
+    height: main + footer,
+  },
+  footer: {
+    width: Dimensions.get("window").width,
+    height: footer,
+    backgroundColor: "#1E2423",
+    flexDirection: "row",
+  },
+});
+
+export default GlobalStyles;

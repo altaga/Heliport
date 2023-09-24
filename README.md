@@ -1,7 +1,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) [<img src="https://img.shields.io/badge/View-Video-red">](https://youtu.be/33bW-RTs9Do)
 
-# Heliport
+# Heliport wallet has been integrated into our other project, which is EffiSend.
 
 <img src="https://i.ibb.co/G2FvkzC/New-Project.png" width="400">
 
@@ -13,7 +13,7 @@ POS APK: [LINK](./React%20Native%20Project%20POS%20APK/app-release.apk)
 
 # Here is our main demo video: 
 
-[![Demo](https://i.ibb.co/g4W3ypx/image.png)](https://youtu.be/33bW-RTs9Do)
+[![Demo](https://i.ibb.co/g4W3ypx/image.png)](https://youtu.be/d9mwJxfxFiY)
 
 # Materials:
 
@@ -38,7 +38,7 @@ Cloud and Web Services:
 
 This is the connection diagram of the system:
 
-<img src="https://i.ibb.co/Tr8tG06/scheme-drawio-1.png">
+<img src="https://i.ibb.co/2tytNJC/scheme-drawio-3.png">
 
 # SolanaFM:
 
@@ -86,21 +86,21 @@ More details about the SolanaFM API
 
 # React Native SAGA Dapp:
 
-In order to create this new method of signing offline and sending transactions via LoRaWAN, we needed a Dapp that is compatible with this new system, so we created our own Heliport Dapp as a native Android application for SAGA phone.
+In order to create this new method of signing offline and sending transactions via LoRaWAN, we needed a Dapp that is compatible with this new system, so we created our own EffiSend Dapp as a native Android application for SAGA phone.
 
-<img src="https://i.ibb.co/xDVfx7n/vlcsnap-2023-03-12-14h05m17s357.png" width="32%"> <img src="https://i.ibb.co/t3S9Wnt/vlcsnap-2023-03-12-14h05m28s504.png" width="32%"> <img src="https://i.ibb.co/sg0Q5nw/vlcsnap-2023-03-12-14h10m38s662.png" width="32%">
+<img src="https://i.ibb.co/87GZnC1/Screenshot-20230923-213231.png" width="32%"> <img src="https://i.ibb.co/c1rvSJv/Screenshot-20230923-213239.png" width="32%"> <img src="https://i.ibb.co/KztnrF2/Screenshot-20230923-213246.png" width="32%">
 
 This Dapp works entirely on mainnet and has all the functions of a traditional wallet, get balances, get current SOL price, receive, manage and send assets via solana mainnet, with integrated SeedVault, fully offline (via LoRaWAN network).
 
-<img src="https://i.ibb.co/mTxHHrM/vlcsnap-2023-03-12-15h18m44s598.png" width="32%"> <img src="https://i.ibb.co/Hx0SX5Q/vlcsnap-2023-03-12-14h10m44s614.png" width="32%">  <img src="https://i.ibb.co/NLK27dc/vlcsnap-2023-03-12-15h21m30s558.png" width="32%">
+<img src="https://i.ibb.co/mTxHHrM/vlcsnap-2023-03-12-15h18m44s598.png" width="32%"> <img src="https://i.ibb.co/kJnwgPF/Screenshot-2023-09-23-213851.png" width="32%"> <img src="https://i.ibb.co/LNNVyWB/Screenshot-2023-09-23-213903.png" width="32%">
 
 Also, this Dapp has the ability to send transactions via Bluetooth Low Energy (BLE) to our device with LoRaWAN, as long as the device is close to the cell phone, for example when we are in airplane mode and with Bluetooth turned on, only the LoRaWAN transaction will appear available.
 
-<img src="https://i.ibb.co/k2RpSf6/vlcsnap-2023-03-12-14h13m24s859.png" width="32%"> <img src="https://i.ibb.co/K93x7Np/vlcsnap-2023-03-12-15h24m25s483.png" width="32%"> <img src="https://i.ibb.co/mh6PDQz/vlcsnap-2023-03-12-15h26m02s852.png" width="32%">
+<img src="https://i.ibb.co/k2RpSf6/vlcsnap-2023-03-12-14h13m24s859.png" width="32%"> <img src="https://i.ibb.co/bRmckvR/Screenshot-2023-09-23-214129.png" width="32%"> <img src="https://i.ibb.co/d2D7TDK/Screenshot-2023-09-23-214302.png" width="32%">
 
 The transaction signing process is done through the Mobile Wallet Adapter with Solflare, in the future we seek to give direct support to SeedVault in React Native.
 
-<img src="https://i.ibb.co/7vbkn3Y/vlcsnap-2023-03-12-14h18m49s716.png" width="32%"> <img src="https://i.ibb.co/R6ckN9B/vlcsnap-2023-03-12-14h19m49s531.png" width="32%"> <img src="https://i.ibb.co/NS59CSp/seeed.png" width="32%"> 
+<img src="https://i.ibb.co/YjwmW2W/Screenshot-2023-09-23-214322.png" width="32%"> <img src="https://i.ibb.co/C1fxXrt/Screenshot-2023-09-23-214337.png" width="32%"> <img src="https://i.ibb.co/PQZnZB9/Screenshot-2023-09-23-214429.png" width="32%"> 
 
 NOTE: In order to sign a transaction and it is valid for the blockchan, we always need the last Solana blockhash which we will ask the device for each time we send the transaction. Nevertheless, in the future we could implement a Durable Nonce Transaction, so that the account does not require the last blockhash and the transaction is even more agile by not making the request to the Node for the recentBlockhash. Or the transaction could even be saved if the blockchain was in a downtime and sent once the online status was recovered.
 
@@ -120,7 +120,7 @@ Thanks to this we can carry out a 100% offline payment system, only with the inf
 
 The purpose of the LoRaWAN device is to receive RPC method responses and send RPC calls via BLE from any Heliport Dapp and broadcast to the Helium LoRaWAN network.
 
-<img src="https://i.ibb.co/sbG77Pw/scheme2-drawio.png">
+<img src="https://i.ibb.co/cr80CC2/scheme2-drawio.png">
 
 The data that is sent from the device to the Helium console is divided into two groups:
 
@@ -138,7 +138,7 @@ The data that is sent from the device to the Helium console is divided into two 
 
 Finally, for the proper functioning of the device, we recommend putting it in a case that protects it from the environment and a battery to avoid disconnections in case of power failures.
 
-<img src="https://i.ibb.co/PY7hnhz/vlcsnap-2023-03-12-16h47m07s329.png">
+<img src="https://i.ibb.co/xMPFs3V/20230825-142538.jpg">
 
 # Helium Console:
 
@@ -195,23 +195,13 @@ Once the data reaches the lambda, it is processed by methods or transactions.
       };
       return response;
 
-# Prototype:
+# Prototypes:
 
-Device:
-
-<img src="https://i.ibb.co/nPVk8ym/image.png" height="300px">
-
-SAGA Phone:
-
-<img src="https://i.ibb.co/HFDdzRT/image.png" height="300px">
-
-POS system:
-
-<img src="https://i.ibb.co/zRz2xYM/image.png" height="300px">
+<img src="https://i.ibb.co/QM55fBb/vlcsnap-2023-09-23-22h01m24s745.png" height="300px">
 
 # Our DEMO:
 
-[![Demo](https://i.ibb.co/g4W3ypx/image.png)](https://youtu.be/33bW-RTs9Do)
+[![Demo](https://i.ibb.co/g4W3ypx/image.png)](https://youtu.be/d9mwJxfxFiY)
 
 # References:
 
@@ -222,7 +212,7 @@ POS system:
 
 # Table of contents
 
-- [Heliport](#heliport)
+- [Heliport wallet has been integrated into our other project, which is EffiSend.](#heliport-wallet-has-been-integrated-into-our-other-project-which-is-effisend)
 - [APKs:](#apks)
 - [Here is our main demo video:](#here-is-our-main-demo-video)
 - [Materials:](#materials)
@@ -234,7 +224,7 @@ POS system:
 - [Helium Console:](#helium-console)
 - [AWS IoT:](#aws-iot)
 - [AWS Lambda:](#aws-lambda)
-- [Prototype:](#prototype)
+- [Prototypes:](#prototypes)
 - [Our DEMO:](#our-demo)
 - [References:](#references)
 - [Table of contents](#table-of-contents)
