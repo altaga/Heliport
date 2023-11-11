@@ -26,7 +26,7 @@
     "asyncstorage-down": "^4.2.0",
     "aws-iot-device-sdk": "^2.2.12",
     "aws-sdk": "^2.1388.0",
-    "axios": "^1.4.0",
+    "axios": "^1.6.0",
     "babel-plugin-transform-remove-console": "^6.9.4",
     "big-integer": "^1.6.51",
     "bignumber.js": "^9.1.1",
